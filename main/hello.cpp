@@ -6,6 +6,6 @@ int main(void) {
   cout << "Hello, World\n";
   cout << "Hello, Jenkins\n";
   cout << "I have successfully built and run this  \n";
-  cout<< "Changes and commit to check if Jenkins is setup properly";
+  cout<< "Changes and commit to check if Jenkins is setup properly \n";
   return 0;
 }
