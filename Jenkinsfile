@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    def buildStatus = sh(script: 'g++ -o PES2UG22CS103-1 main/hello.cpp', returnStatus: true)
+                    def buildStatus = sh(script: 'g++ -o PES2UG22CS103-1 main/hello.cpp && exit 1', returnStatus: true)
                     if (buildStatus != 0) {
                         error("Build failed")
                     }
